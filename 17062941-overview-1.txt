@@ -1,0 +1,35 @@
+For generate_map function: I used a loop to expand my generated map using by using a
+deepcopy of the single_point list into my generated_map list. The list would expend
+depending on the amount of locations. Then it would return the list.
+
+For print_map: the important bit was to use penup at the start so that it doesn’t
+draw from the middle to the starting location. Also used turtle.done to freeze frame
+so that we can look at the print without closing.
+
+Calculate_path: uses calculate_distance function, so we get a list into this function,
+and we are getting the distance in between EACH of them so had to decrement list size,
+call in the function giving it x, x+1, y, y+1 parameters for calculation. At the end
+we add the last distance from last location to start as well.
+
+For nearest_neighbor_algorithm; I used. sort before carrying out my operations because
+this is useful algorithm will find shortest path quicker since then we are initiating 
+using pop) from the lowest value.
+
+Create_population: the prominent part for this function is that we randomise this population.
+
+Fitness_function: is for ranking the individuals in the population. We have a score
+variable to keep the score and store in in a new list for comparison.
+
+Mating_function: this function is not working, however I believe Ive given the
+right parameters for extending my new_gene_pool, since it is going for different 
+function in that instance maybe I should have separated that but it didn’t work
+nonetheless.
+
+Breed function: grabs 2 parents and creates a cut point in their DNA, gets that
+DNA sample from each parent and we simply from a child by dna_1 + dna_2 addition.
+
+Mutate function: this mutation only happens depending on the test input rate given
+for mutation_rate and performs a genetic switch.
+
+Word count: 299
+Erol GELBUL / 17062941
