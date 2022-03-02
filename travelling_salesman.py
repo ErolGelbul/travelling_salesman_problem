@@ -3,16 +3,6 @@ import turtle
 import math
 import copy
 
-def student_details():
-    
-    # add variables to store student ID and username to be returned
-
-    student_id = 17062941
-    student_username = "eg18aba"
-    
-    return student_id, student_username
-
-
 def generate_map(x_range, y_range, locations):
 
     # add code to create a list then use a for loop to create a random population for this list
